@@ -1,0 +1,36 @@
+University of Texas at Dallas IEEE Valentine's Day 2016 Hackathon
+-----------------------------------------------------------------
+
+The challenge was to control a crossbow mounted on a servo motor
+which was connected to an Arduino Uno and win a target shooting
+contest. Originally, our code was supposed to run autonomously,
+but the homemade crossbows were too heavy for the servo motors
+to operate consistently, so the kinematic elements only serve as a
+rough estimate of initial aim.  Also, the kinematic equations were
+solved on paper and hard-coded, so please forgive unlabeled,
+hard-coded constants. There were three crossbows mounted on a table
+approximately 4 meters from the target, and contestants were randomly
+assigned to a different one on each round. Each crossbow had a
+secondary servo which acted as a trigger.
+
+To compensate for the servo's inconsistencies is was necessary to
+write serial commands to aim the motors and fire.
+
+-----------------------------------------------------------------
+
+Commands:
+
+['1'|'2'|'3'] : select which crossbow's trajectory estimate to initialize
+'u' : tilt servo up
+'d' : tilt servo down
+'r' : rotate right
+'l' : rotate left
+'f' : fire
+
+-----------------------------------------------------------------
+
+Results: 
+
+2nd place overall, competing individualy
+
+-----------------------------------------------------------------
